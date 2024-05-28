@@ -135,7 +135,7 @@ main_ingredients <- main_ingredients %>%
 main_ingredients
 ```
 
-```{.output}
+```output
 # A tibble: 8 × 4
   ingredient                amount_imperial amount_grams amount_oz
   <chr>                     <chr>                  <dbl>     <dbl>

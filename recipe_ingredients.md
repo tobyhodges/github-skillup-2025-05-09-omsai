@@ -28,7 +28,7 @@ There are 3 main components to this recipe: the main ingredients for the dough, 
 ### Dough Ingredients
 
 
-```r
+``` r
 main_ingredients <- tribble(
   ~ingredient, ~amount_imperial, ~amount_grams,
   "butter (cold)", "8 tablespoons", 113,
@@ -70,7 +70,7 @@ In warmer climates, you may want to reduce the amount of buttermilk and/or incre
 ### Cinnamon-sugar filling
 
 
-```r
+``` r
 filling_ingredients <- tribble(
   ~ingredient, ~amount_imperial, ~amount_grams,
   "light brown sugar", "¾ cup", 150,
@@ -93,7 +93,7 @@ filling_ingredients %>%
 ### Glaze 
 
 
-```r
+``` r
 glaze_ingredients <- tribble(
   ~ingredient, ~amount_imperial, ~amount_grams,
   "powdered sugar", "1 cup", 120,
@@ -128,14 +128,14 @@ Add a column to `main_ingredients` that has the amount in ounces (weight, not fl
 ::::::::::::::::::::::::::::::::::::: solution
 
 
-```r
+``` r
 main_ingredients <- main_ingredients %>% 
   mutate(amount_oz = amount_grams * 0.035274)
 
 main_ingredients
 ```
 
-```output
+``` output
 # A tibble: 8 × 4
   ingredient                amount_imperial amount_grams amount_oz
   <chr>                     <chr>                  <dbl>     <dbl>
